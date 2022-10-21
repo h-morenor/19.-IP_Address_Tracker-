@@ -1,0 +1,150 @@
+:root {
+  --very_dark_gray: hsl(0, 0%, 17%);
+  --dark_gray: hsl(0, 0%, 59%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  box-sizing: border-box;
+  font-size: 18px;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header > img {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 30%;
+}
+
+input {
+  width: calc(350px - 2rem);
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border: none;
+  font-size: 0.9rem;
+  padding-left: 1rem;
+  height: 3rem;
+}
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
+}
+
+h1 {
+  font-size: 1.5rem;
+  color: white;
+  margin: 1rem;
+}
+
+header div {
+  display: flex;
+}
+
+header div > div {
+  background-color: var(--very_dark_gray);
+  width: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.search:hover {
+  cursor: pointer;
+}
+
+main section div h5 {
+  color: var(--dark_gray);
+  text-transform: uppercase;
+  font-size: 0.6rem;
+}
+
+main,
+main > section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+}
+
+main > section:first-child div {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main > section p {
+  width: 80%;
+  height: 2rem;
+
+  padding: 0.5rem;
+  margin: 0.7rem;
+}
+
+main > section {
+  background-color: white;
+  width: 350px;
+  border-radius: 15px;
+  padding: 2rem;
+}
+
+#map {
+  width: 100%;
+  height: 700px;
+  position: absolute;
+  top: 30%;
+  z-index: -1;
+}
+
+@media only screen and (min-width: 700px) {
+  main {
+    min-width: 700px;
+    width: 80%;
+  }
+
+  main section {
+    flex-direction: row;
+    gap: 1rem;
+    width: 100%;
+    padding-right: 0;
+  }
+
+  main section div {
+    border-right: 1px solid var(--dark_gray);
+    justify-content: left;
+    align-items: flex-start;
+  }
+
+  main section div:nth-child(4) {
+    border-right: none;
+  }
+
+  main > section p {
+    text-align: left;
+    font-weight: 800;
+    padding: 0;
+  }
+  h5 {
+    width: 80%;
+    text-align: left;
+  }
+}

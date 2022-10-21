@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css" />
+  <title>Frontend Mentor | IP Address Tracker</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css"
+    integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ=="
+    crossorigin="" />
+  <script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js"
+    integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ=="
+    crossorigin=""></script>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+
+
+  <header>
+
+
+    <img src="./images/pattern-bg.png">
+
+    <h1>IP Address Tracker</h1>
+
+    <div>
+      <input type="text" placeholder="Search for any IP address or domain">
+      <div class="search"><img src="./images/icon-arrow.svg"> </div>
+    </div>
+
+  </header>
+  <main>
+    <section>
+      <div>
+        <h5>IP Address</h5>
+        <p id="ip"></p>
+      </div>
+
+      <div>
+        <h5>Location</h5>
+        <p id="location"></p>
+
+      </div>
+
+      <div>
+        <h5>Timezone</h5>
+        <p id="timezone"></p>
+      </div>
+
+      <!-- add offset value dynamically using the API -->
+      <div>
+        <h5>ISP</h5>
+        <p id="isp"></p>
+
+      </div>
+    </section>
+  </main>
+  <section id="map">
+
+  </section>
+
+
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Harold Moreno</a>.
+  </footer>
+</body>
+<script src="script.js"></script>
+
+</html>
